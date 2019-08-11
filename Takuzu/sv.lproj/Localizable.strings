@@ -1,0 +1,37 @@
+/* 
+  Localizable.strings
+  Takuzu
+
+  Created by Erland Isaksson on 2019-08-10.
+  Copyright © 2019 Erland Isaksson. All rights reserved.
+*/
+"selectMode" = "Välj typ av spel";
+"easy" = "Enkelt";
+"medium" = "Normalt";
+"hard" = "Svårt";
+"veryHard" = "Mycket svårt";
+"generateNew" = "Generera nya";
+"previouslyCompleted" = "Tidigare slutförda";
+"previouslyStarted" = "Tidigare påbörjade";
+"selectLevel" = "Välj bana";
+"back" = "Tillbaka";
+"next" = "NÄsta";
+"loading" = "Laddar...";
+"restart" = "Starta om";
+"quit" = "Avsluta";
+"hint" = "Ledtråd";
+"noHintAvailable" = "Ingen ledtråd tillgänglig";
+"completedIn" = "Slutfört på";
+"congratulations" = "Grattis";
+"record" = "Rekord";
+"notCompleted" = "Ej slutförd";
+"rule1" = "Alla rutor måste fyllas";
+"rule2" = "Max två rutor i rad med samma nummer";
+"rule3" = "Samma antal rutor med samma nummer i varje rad/kolumn";
+"rule4" = "Kombinationen i varje rad/kolumn måste vara unik";
+"hintPair" = "Det finns redan ett par";
+"hintCompleteRowColumn" = "Kvoten för ett nummer är redan fyllt i raden/kolumnen";
+"hintAvoidTrio" = "Undvik tre rutor i rad med samma nummer";
+"hintHiddenTrio" = "Förbered för att undvika tre rutor i rad med samma nummer";
+"hintUniqueRowColumn" = "Varje rad/kolumn måste vara unik";
+"invalidBoard" = "Uppfyller inte alla regler";

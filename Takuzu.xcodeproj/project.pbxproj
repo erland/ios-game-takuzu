@@ -8,26 +8,81 @@
 
 /* Begin PBXBuildFile section */
 		DC3814AC22FEA28400590EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814AB22FEA28400590EAA /* AppDelegate.swift */; };
-		DC3814AE22FEA28400590EAA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814AD22FEA28400590EAA /* GameScene.sks */; };
-		DC3814B022FEA28400590EAA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814AF22FEA28400590EAA /* Actions.sks */; };
-		DC3814B222FEA28400590EAA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814B122FEA28400590EAA /* GameScene.swift */; };
 		DC3814B422FEA28400590EAA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814B322FEA28400590EAA /* GameViewController.swift */; };
 		DC3814B722FEA28400590EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3814B522FEA28400590EAA /* Main.storyboard */; };
 		DC3814B922FEA28500590EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3814B822FEA28500590EAA /* Assets.xcassets */; };
 		DC3814BC22FEA28500590EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3814BA22FEA28500590EAA /* LaunchScreen.storyboard */; };
+		DC3814C422FEA33500590EAA /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C322FEA33500590EAA /* Array2D.swift */; };
+		DC3814CA22FEA34800590EAA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C522FEA34800590EAA /* BoardView.swift */; };
+		DC3814CB22FEA34800590EAA /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C622FEA34800590EAA /* Board.swift */; };
+		DC3814CC22FEA34800590EAA /* BruteForceSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C722FEA34800590EAA /* BruteForceSolverBoard.swift */; };
+		DC3814CD22FEA34800590EAA /* BoardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C822FEA34800590EAA /* BoardGenerator.swift */; };
+		DC3814CE22FEA34800590EAA /* BoardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C922FEA34800590EAA /* BoardStorage.swift */; };
+		DC3814D022FEA35400590EAA /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814CF22FEA35400590EAA /* GameDelegate.swift */; };
+		DC3814DD22FEA39600590EAA /* SingleGameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D122FEA39500590EAA /* SingleGameOverScene.swift */; };
+		DC3814DE22FEA39600590EAA /* SelectLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D222FEA39500590EAA /* SelectLevelScene.swift */; };
+		DC3814DF22FEA39600590EAA /* SingleGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D322FEA39500590EAA /* SingleGameScene.sks */; };
+		DC3814E022FEA39600590EAA /* SelectDifficultyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D422FEA39600590EAA /* SelectDifficultyScene.sks */; };
+		DC3814E122FEA39600590EAA /* SelectDifficultyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D522FEA39600590EAA /* SelectDifficultyScene.swift */; };
+		DC3814E222FEA39600590EAA /* SingleGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D622FEA39600590EAA /* SingleGameScene.swift */; };
+		DC3814E322FEA39600590EAA /* SKScene+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D722FEA39600590EAA /* SKScene+Localization.swift */; };
+		DC3814E422FEA39600590EAA /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D822FEA39600590EAA /* SelectLevelScene.sks */; };
+		DC3814E622FEA39600590EAA /* SingleGameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814DA22FEA39600590EAA /* SingleGameOverScene.sks */; };
+		DC3814E722FEA39600590EAA /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814DB22FEA39600590EAA /* Number.swift */; };
+		DC3814E822FEA39600590EAA /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814DC22FEA39600590EAA /* NumberView.swift */; };
+		DC3814EC22FEA70100590EAA /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814EB22FEA70100590EAA /* Difficulty.swift */; };
+		DC3814EE22FEBA4500590EAA /* AbstractSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814ED22FEBA4500590EAA /* AbstractSolverBoard.swift */; };
+		DC3814F122FEBB4C00590EAA /* BoardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F022FEBB4C00590EAA /* BoardHandler.swift */; };
+		DC3814F322FEC1C600590EAA /* SolverTechnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F222FEC1C600590EAA /* SolverTechnique.swift */; };
+		DC3814F522FEC1E200590EAA /* TechniqueSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F422FEC1E200590EAA /* TechniqueSolverBoard.swift */; };
+		DC3814F722FEC28B00590EAA /* TakuzuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F622FEC28B00590EAA /* TakuzuRepository.swift */; };
+		DC3814F922FEC53300590EAA /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F822FEC53300590EAA /* Pair.swift */; };
+		DC3814FB22FEC56500590EAA /* CompleteRowColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FA22FEC56500590EAA /* CompleteRowColumn.swift */; };
+		DC3814FD22FEC59400590EAA /* AvoidTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FC22FEC59400590EAA /* AvoidTrio.swift */; };
+		DC3814FF22FEC5B000590EAA /* HiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */; };
+		DC38150122FEC5CD00590EAA /* UniqueRowColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */; };
+		DC3815022300296B00590EAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC3815042300296B00590EAA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC3814A822FEA28400590EAA /* Takuzu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Takuzu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3814AB22FEA28400590EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC3814AD22FEA28400590EAA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DC3814AF22FEA28400590EAA /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
-		DC3814B122FEA28400590EAA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DC3814B322FEA28400590EAA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DC3814B622FEA28400590EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC3814B822FEA28500590EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3814BB22FEA28500590EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC3814BD22FEA28500590EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3814C322FEA33500590EAA /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		DC3814C522FEA34800590EAA /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
+		DC3814C622FEA34800590EAA /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		DC3814C722FEA34800590EAA /* BruteForceSolverBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BruteForceSolverBoard.swift; sourceTree = "<group>"; };
+		DC3814C822FEA34800590EAA /* BoardGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardGenerator.swift; sourceTree = "<group>"; };
+		DC3814C922FEA34800590EAA /* BoardStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardStorage.swift; sourceTree = "<group>"; };
+		DC3814CF22FEA35400590EAA /* GameDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		DC3814D122FEA39500590EAA /* SingleGameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGameOverScene.swift; sourceTree = "<group>"; };
+		DC3814D222FEA39500590EAA /* SelectLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLevelScene.swift; sourceTree = "<group>"; };
+		DC3814D322FEA39500590EAA /* SingleGameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SingleGameScene.sks; sourceTree = "<group>"; };
+		DC3814D422FEA39600590EAA /* SelectDifficultyScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectDifficultyScene.sks; sourceTree = "<group>"; };
+		DC3814D522FEA39600590EAA /* SelectDifficultyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDifficultyScene.swift; sourceTree = "<group>"; };
+		DC3814D622FEA39600590EAA /* SingleGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleGameScene.swift; sourceTree = "<group>"; };
+		DC3814D722FEA39600590EAA /* SKScene+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKScene+Localization.swift"; sourceTree = "<group>"; };
+		DC3814D822FEA39600590EAA /* SelectLevelScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SelectLevelScene.sks; sourceTree = "<group>"; };
+		DC3814DA22FEA39600590EAA /* SingleGameOverScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SingleGameOverScene.sks; sourceTree = "<group>"; };
+		DC3814DB22FEA39600590EAA /* Number.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Number.swift; sourceTree = "<group>"; };
+		DC3814DC22FEA39600590EAA /* NumberView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberView.swift; sourceTree = "<group>"; };
+		DC3814EB22FEA70100590EAA /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		DC3814ED22FEBA4500590EAA /* AbstractSolverBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractSolverBoard.swift; sourceTree = "<group>"; };
+		DC3814F022FEBB4C00590EAA /* BoardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardHandler.swift; sourceTree = "<group>"; };
+		DC3814F222FEC1C600590EAA /* SolverTechnique.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolverTechnique.swift; sourceTree = "<group>"; };
+		DC3814F422FEC1E200590EAA /* TechniqueSolverBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechniqueSolverBoard.swift; sourceTree = "<group>"; };
+		DC3814F622FEC28B00590EAA /* TakuzuRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakuzuRepository.swift; sourceTree = "<group>"; };
+		DC3814F822FEC53300590EAA /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		DC3814FA22FEC56500590EAA /* CompleteRowColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRowColumn.swift; sourceTree = "<group>"; };
+		DC3814FC22FEC59400590EAA /* AvoidTrio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidTrio.swift; sourceTree = "<group>"; };
+		DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenTrio.swift; sourceTree = "<group>"; };
+		DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueRowColumn.swift; sourceTree = "<group>"; };
+		DC3815032300296B00590EAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC38150523002D5500590EAA /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +115,52 @@
 		DC3814AA22FEA28400590EAA /* Takuzu */ = {
 			isa = PBXGroup;
 			children = (
+				DC3814EF22FEBB3800590EAA /* SolutionTechniques */,
+				DC3814C322FEA33500590EAA /* Array2D.swift */,
+				DC3814C622FEA34800590EAA /* Board.swift */,
+				DC3814C822FEA34800590EAA /* BoardGenerator.swift */,
+				DC3814C922FEA34800590EAA /* BoardStorage.swift */,
+				DC3814F622FEC28B00590EAA /* TakuzuRepository.swift */,
+				DC3814C522FEA34800590EAA /* BoardView.swift */,
+				DC3814ED22FEBA4500590EAA /* AbstractSolverBoard.swift */,
+				DC3814C722FEA34800590EAA /* BruteForceSolverBoard.swift */,
+				DC3814F422FEC1E200590EAA /* TechniqueSolverBoard.swift */,
+				DC3814CF22FEA35400590EAA /* GameDelegate.swift */,
+				DC3814DB22FEA39600590EAA /* Number.swift */,
+				DC3814DC22FEA39600590EAA /* NumberView.swift */,
+				DC3814D422FEA39600590EAA /* SelectDifficultyScene.sks */,
+				DC3814D522FEA39600590EAA /* SelectDifficultyScene.swift */,
+				DC3814D822FEA39600590EAA /* SelectLevelScene.sks */,
+				DC3814D222FEA39500590EAA /* SelectLevelScene.swift */,
+				DC3814DA22FEA39600590EAA /* SingleGameOverScene.sks */,
+				DC3814D122FEA39500590EAA /* SingleGameOverScene.swift */,
+				DC3814D322FEA39500590EAA /* SingleGameScene.sks */,
+				DC3814D622FEA39600590EAA /* SingleGameScene.swift */,
 				DC3814AB22FEA28400590EAA /* AppDelegate.swift */,
-				DC3814AD22FEA28400590EAA /* GameScene.sks */,
-				DC3814AF22FEA28400590EAA /* Actions.sks */,
-				DC3814B122FEA28400590EAA /* GameScene.swift */,
 				DC3814B322FEA28400590EAA /* GameViewController.swift */,
+				DC3814EB22FEA70100590EAA /* Difficulty.swift */,
 				DC3814B522FEA28400590EAA /* Main.storyboard */,
 				DC3814B822FEA28500590EAA /* Assets.xcassets */,
 				DC3814BA22FEA28500590EAA /* LaunchScreen.storyboard */,
 				DC3814BD22FEA28500590EAA /* Info.plist */,
+				DC3814D722FEA39600590EAA /* SKScene+Localization.swift */,
+				DC3815042300296B00590EAA /* Localizable.strings */,
 			);
 			path = Takuzu;
+			sourceTree = "<group>";
+		};
+		DC3814EF22FEBB3800590EAA /* SolutionTechniques */ = {
+			isa = PBXGroup;
+			children = (
+				DC3814F022FEBB4C00590EAA /* BoardHandler.swift */,
+				DC3814F222FEC1C600590EAA /* SolverTechnique.swift */,
+				DC3814F822FEC53300590EAA /* Pair.swift */,
+				DC3814FA22FEC56500590EAA /* CompleteRowColumn.swift */,
+				DC3814FC22FEC59400590EAA /* AvoidTrio.swift */,
+				DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */,
+				DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */,
+			);
+			path = SolutionTechniques;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +205,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = DC38149F22FEA28400590EAA;
 			productRefGroup = DC3814A922FEA28400590EAA /* Products */;
@@ -131,11 +222,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3814E622FEA39600590EAA /* SingleGameOverScene.sks in Resources */,
+				DC3814DF22FEA39600590EAA /* SingleGameScene.sks in Resources */,
 				DC3814B722FEA28400590EAA /* Main.storyboard in Resources */,
-				DC3814AE22FEA28400590EAA /* GameScene.sks in Resources */,
 				DC3814B922FEA28500590EAA /* Assets.xcassets in Resources */,
+				DC3814E422FEA39600590EAA /* SelectLevelScene.sks in Resources */,
+				DC3815022300296B00590EAA /* Localizable.strings in Resources */,
 				DC3814BC22FEA28500590EAA /* LaunchScreen.storyboard in Resources */,
-				DC3814B022FEA28400590EAA /* Actions.sks in Resources */,
+				DC3814E022FEA39600590EAA /* SelectDifficultyScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +240,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3814B222FEA28400590EAA /* GameScene.swift in Sources */,
+				DC3814E722FEA39600590EAA /* Number.swift in Sources */,
+				DC3814DD22FEA39600590EAA /* SingleGameOverScene.swift in Sources */,
+				DC3814F722FEC28B00590EAA /* TakuzuRepository.swift in Sources */,
 				DC3814B422FEA28400590EAA /* GameViewController.swift in Sources */,
+				DC38150122FEC5CD00590EAA /* UniqueRowColumn.swift in Sources */,
+				DC3814DE22FEA39600590EAA /* SelectLevelScene.swift in Sources */,
+				DC3814F122FEBB4C00590EAA /* BoardHandler.swift in Sources */,
+				DC3814CA22FEA34800590EAA /* BoardView.swift in Sources */,
+				DC3814CE22FEA34800590EAA /* BoardStorage.swift in Sources */,
+				DC3814E322FEA39600590EAA /* SKScene+Localization.swift in Sources */,
+				DC3814FD22FEC59400590EAA /* AvoidTrio.swift in Sources */,
+				DC3814FB22FEC56500590EAA /* CompleteRowColumn.swift in Sources */,
+				DC3814D022FEA35400590EAA /* GameDelegate.swift in Sources */,
+				DC3814F322FEC1C600590EAA /* SolverTechnique.swift in Sources */,
+				DC3814CC22FEA34800590EAA /* BruteForceSolverBoard.swift in Sources */,
+				DC3814E222FEA39600590EAA /* SingleGameScene.swift in Sources */,
+				DC3814CB22FEA34800590EAA /* Board.swift in Sources */,
+				DC3814F922FEC53300590EAA /* Pair.swift in Sources */,
+				DC3814EE22FEBA4500590EAA /* AbstractSolverBoard.swift in Sources */,
+				DC3814E822FEA39600590EAA /* NumberView.swift in Sources */,
+				DC3814F522FEC1E200590EAA /* TechniqueSolverBoard.swift in Sources */,
+				DC3814CD22FEA34800590EAA /* BoardGenerator.swift in Sources */,
+				DC3814FF22FEC5B000590EAA /* HiddenTrio.swift in Sources */,
+				DC3814C422FEA33500590EAA /* Array2D.swift in Sources */,
+				DC3814EC22FEA70100590EAA /* Difficulty.swift in Sources */,
 				DC3814AC22FEA28400590EAA /* AppDelegate.swift in Sources */,
+				DC3814E122FEA39600590EAA /* SelectDifficultyScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +289,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		DC3815042300296B00590EAA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3815032300296B00590EAA /* en */,
+				DC38150523002D5500590EAA /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -178,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -239,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -301,7 +430,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = info.isaksson.erland.Takuzu;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.isaksson.erland.Takuzu-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,7 +448,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = info.isaksson.erland.Takuzu;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.isaksson.erland.Takuzu-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

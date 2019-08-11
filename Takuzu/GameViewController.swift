@@ -10,32 +10,132 @@ import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController {
-
+class GameViewController: UIViewController, GameDelegate {
+    var board: Board?
+    
+    func finishedGame() {
+        selectDifficulty()
+    }
+    
+    func gameComplete(playerName: String, board: Board, seconds: Int, hints: Int) {
+        var completed = false
+        if board.isCompleted() {
+            BoardStorage().storeCompletedBoard(board: board, seconds: seconds, hints: hints)
+            completed = true
+        }else {
+            BoardStorage().storeBoardInProgress(board: board, seconds: seconds, hints: hints)
+        }
+        if !completed {
+            finishedGame()
+        }else {
+            if let view = self.view as! SKView? {
+                // Load the SKScene from 'GameScene.sks'
+                if let scene = SKScene(fileNamed: "SingleGameOverScene") as? SingleGameOverScene {
+                    // Set the scale mode to scale to fit the window
+                    scene.scaleMode = .aspectFit
+                    
+                    scene.setup(delegate: self, board: board, seconds: seconds)
+                    
+                    view.presentScene(scene)
+                }
+            }
+        }
+    }
+    
+    func selectedDifficulty(difficulty: Difficulty?) {
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
+                scene.setup(delegate: self, difficulty: difficulty, boardSize: 6)
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFit
+                view.presentScene(scene)
+            }
+        }
+    }
+    
+    func selectedCompletedBoards() {
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
+                scene.setup(delegate: self, difficulty: nil, boardSize: 6, completed: true)
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFit
+                view.presentScene(scene)
+            }
+        }
+    }
+    
+    func selectedInProgressBoards() {
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
+                scene.setup(delegate: self, difficulty: nil, boardSize: 6, inProgress: true)
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFit
+                view.presentScene(scene)
+            }
+        }
+    }
+    
+    
+    func selectedBoard(board: Board, startTime: Int) {
+        startSingleGame(board: board, startTime: startTime)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let view = self.view as! SKView? {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                
-                // Present the scene
-                view.presentScene(scene)
+        //generateBoards(noOfBoards: 12, difficulty: .Easy)
+        //TakuzuRepository().validateBoards()
+        selectDifficulty()
+    }
+    
+    private func generateBoards(noOfBoards: Int, difficulty: Difficulty) {
+        var boards : [String] = []
+        while boards.count<noOfBoards {
+            if let board = TakuzuRepository().getGeneratedBoard(difficulty: difficulty, size: 6) {
+                if !boards.contains(board) {
+                    boards.append(board)
+                }
             }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
+        }
+        print("Boards with difficulty: \(difficulty):")
+        for board in boards {
+            print("\"\(board)\",")
         }
     }
-
+    func selectDifficulty() {
+        if let view = self.view as! SKView? {
+            view.ignoresSiblingOrder = true
+            
+            if let scene = SKScene(fileNamed: "SelectDifficultyScene") as? SelectDifficultyScene {
+                scene.setup(delegate: self)
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFit
+                view.presentScene(scene)
+            }
+        }
+        
+    }
+    func startSingleGame(board: Board, startTime: Int) {
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "SingleGameScene") as? SingleGameScene {
+                // Set the scale mode to scale to fit the window
+                scene.scaleMode = .aspectFit
+                
+                scene.setup(delegate: self, board: board, startTime: startTime)
+                
+                view.presentScene(scene)
+            }
+        }
+    }
+    
     override var shouldAutorotate: Bool {
         return true
     }
-
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         if UIDevice.current.userInterfaceIdiom == .phone {
             return .allButUpsideDown
@@ -43,7 +143,7 @@ class GameViewController: UIViewController {
             return .all
         }
     }
-
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
