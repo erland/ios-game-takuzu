@@ -227,7 +227,7 @@ class AbstractSolverBoard : BoardHandler {
                         break
                     }
                 }else {
-                    if board[row*size+column] != board[y*size+column] {
+                    if board[row*size+column] != board[row*size+x] {
                         equal = false
                         break
                     }

@@ -121,6 +121,9 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
                     }
                 }else {
                     boardView?.board?.addFinalNumber(number: 1, x: cellPos.x, y: cellPos.y)
+                    if let number = boardView!.board!.atPosition(cellPos.x, cellPos.y) {
+                        number.error = !(boardView!.board!.isValidBoard(number: number))
+                    }
                 }
             }
         }else if quitButton!.contains(position) {
@@ -133,8 +136,8 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
         checkAndProcessGameEnding()
     }
     func clearBoard() {
-        for y in 0..<9 {
-            for x in 0..<9 {
+        for y in 0..<boardView!.board!.height {
+            for x in 0..<boardView!.board!.width {
                 let number = boardView!.board!.atPosition(x, y)
                 if number != nil && !(number!.permanent) {
                     boardView!.board!.removeNumber(x: x, y: y)
@@ -161,6 +164,9 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
             print("Showed solution with Candidate Lines")
             hintName?.text = NSLocalizedString("hintAvoidTrio", comment: "hintAvoidTrio")
         }else if solver.solve(technique: HiddenTrio()) {
+            print("Showed solution with Multiple Lines")
+            hintName?.text = NSLocalizedString("hintHiddenTrio", comment: "hintHiddenTrio")
+        }else if solver.solve(technique: MultipleHiddenTrio()) {
             print("Showed solution with Multiple Lines")
             hintName?.text = NSLocalizedString("hintHiddenTrio", comment: "hintHiddenTrio")
         }else if solver.solve(technique: UniqueRowColumn()) {

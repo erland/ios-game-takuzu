@@ -42,7 +42,26 @@
 		DC3814FF22FEC5B000590EAA /* HiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */; };
 		DC38150122FEC5CD00590EAA /* UniqueRowColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */; };
 		DC3815022300296B00590EAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC3815042300296B00590EAA /* Localizable.strings */; };
+		DC38153F2301466A00590EAA /* PairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38153E2301466A00590EAA /* PairTests.swift */; };
+		DC38154723014B4200590EAA /* CompleteRowColumnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154623014B4200590EAA /* CompleteRowColumnTests.swift */; };
+		DC38154923018FF500590EAA /* AvoidTrioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154823018FF500590EAA /* AvoidTrioTests.swift */; };
+		DC38154B2301929200590EAA /* HiddenTrioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154A2301929200590EAA /* HiddenTrioTests.swift */; };
+		DC38154D2301CD2900590EAA /* UniqueRowColumnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154C2301CD2900590EAA /* UniqueRowColumnTests.swift */; };
+		DC38154F23029A8C00590EAA /* MultipleHiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154E23029A8C00590EAA /* MultipleHiddenTrio.swift */; };
+		DC38155123029AC600590EAA /* MultipleHiddenTrioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38155023029AC600590EAA /* MultipleHiddenTrioTests.swift */; };
+		DC3815532302A91400590EAA /* SolverVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815522302A91400590EAA /* SolverVerifier.swift */; };
+		DC3815552302E48300590EAA /* AbstractSolverBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC3815412301466A00590EAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3814A022FEA28400590EAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3814A722FEA28400590EAA;
+			remoteInfo = Takuzu;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DC3814A822FEA28400590EAA /* Takuzu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Takuzu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,10 +102,28 @@
 		DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueRowColumn.swift; sourceTree = "<group>"; };
 		DC3815032300296B00590EAA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DC38150523002D5500590EAA /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DC38153C2301466A00590EAA /* TakuzuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TakuzuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC38153E2301466A00590EAA /* PairTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairTests.swift; sourceTree = "<group>"; };
+		DC3815402301466A00590EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC38154623014B4200590EAA /* CompleteRowColumnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteRowColumnTests.swift; sourceTree = "<group>"; };
+		DC38154823018FF500590EAA /* AvoidTrioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvoidTrioTests.swift; sourceTree = "<group>"; };
+		DC38154A2301929200590EAA /* HiddenTrioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenTrioTests.swift; sourceTree = "<group>"; };
+		DC38154C2301CD2900590EAA /* UniqueRowColumnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueRowColumnTests.swift; sourceTree = "<group>"; };
+		DC38154E23029A8C00590EAA /* MultipleHiddenTrio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleHiddenTrio.swift; sourceTree = "<group>"; };
+		DC38155023029AC600590EAA /* MultipleHiddenTrioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleHiddenTrioTests.swift; sourceTree = "<group>"; };
+		DC3815522302A91400590EAA /* SolverVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverVerifier.swift; sourceTree = "<group>"; };
+		DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSolverBoardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC3814A522FEA28400590EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3815392301466A00590EAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -100,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3814AA22FEA28400590EAA /* Takuzu */,
+				DC38153D2301466A00590EAA /* TakuzuTests */,
 				DC3814A922FEA28400590EAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3814A822FEA28400590EAA /* Takuzu.app */,
+				DC38153C2301466A00590EAA /* TakuzuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,8 +198,25 @@
 				DC3814FC22FEC59400590EAA /* AvoidTrio.swift */,
 				DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */,
 				DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */,
+				DC38154E23029A8C00590EAA /* MultipleHiddenTrio.swift */,
 			);
 			path = SolutionTechniques;
+			sourceTree = "<group>";
+		};
+		DC38153D2301466A00590EAA /* TakuzuTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC38153E2301466A00590EAA /* PairTests.swift */,
+				DC3815402301466A00590EAA /* Info.plist */,
+				DC38154623014B4200590EAA /* CompleteRowColumnTests.swift */,
+				DC38154823018FF500590EAA /* AvoidTrioTests.swift */,
+				DC38154A2301929200590EAA /* HiddenTrioTests.swift */,
+				DC38154C2301CD2900590EAA /* UniqueRowColumnTests.swift */,
+				DC38155023029AC600590EAA /* MultipleHiddenTrioTests.swift */,
+				DC3815522302A91400590EAA /* SolverVerifier.swift */,
+				DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */,
+			);
+			path = TakuzuTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +239,24 @@
 			productReference = DC3814A822FEA28400590EAA /* Takuzu.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DC38153B2301466A00590EAA /* TakuzuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3815432301466A00590EAA /* Build configuration list for PBXNativeTarget "TakuzuTests" */;
+			buildPhases = (
+				DC3815382301466A00590EAA /* Sources */,
+				DC3815392301466A00590EAA /* Frameworks */,
+				DC38153A2301466A00590EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC3815422301466A00590EAA /* PBXTargetDependency */,
+			);
+			name = TakuzuTests;
+			productName = TakuzuTests;
+			productReference = DC38153C2301466A00590EAA /* TakuzuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +269,10 @@
 				TargetAttributes = {
 					DC3814A722FEA28400590EAA = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					DC38153B2301466A00590EAA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = DC3814A722FEA28400590EAA;
 					};
 				};
 			};
@@ -213,6 +291,7 @@
 			projectRoot = "";
 			targets = (
 				DC3814A722FEA28400590EAA /* Takuzu */,
+				DC38153B2301466A00590EAA /* TakuzuTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +312,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC38153A2301466A00590EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,6 +335,7 @@
 				DC3814F122FEBB4C00590EAA /* BoardHandler.swift in Sources */,
 				DC3814CA22FEA34800590EAA /* BoardView.swift in Sources */,
 				DC3814CE22FEA34800590EAA /* BoardStorage.swift in Sources */,
+				DC38154F23029A8C00590EAA /* MultipleHiddenTrio.swift in Sources */,
 				DC3814E322FEA39600590EAA /* SKScene+Localization.swift in Sources */,
 				DC3814FD22FEC59400590EAA /* AvoidTrio.swift in Sources */,
 				DC3814FB22FEC56500590EAA /* CompleteRowColumn.swift in Sources */,
@@ -270,7 +357,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3815382301466A00590EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC38153F2301466A00590EAA /* PairTests.swift in Sources */,
+				DC38154B2301929200590EAA /* HiddenTrioTests.swift in Sources */,
+				DC38154D2301CD2900590EAA /* UniqueRowColumnTests.swift in Sources */,
+				DC3815552302E48300590EAA /* AbstractSolverBoardTests.swift in Sources */,
+				DC38154723014B4200590EAA /* CompleteRowColumnTests.swift in Sources */,
+				DC38154923018FF500590EAA /* AvoidTrioTests.swift in Sources */,
+				DC38155123029AC600590EAA /* MultipleHiddenTrioTests.swift in Sources */,
+				DC3815532302A91400590EAA /* SolverVerifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC3815422301466A00590EAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3814A722FEA28400590EAA /* Takuzu */;
+			targetProxy = DC3815412301466A00590EAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC3814B522FEA28400590EAA /* Main.storyboard */ = {
@@ -455,6 +565,46 @@
 			};
 			name = Release;
 		};
+		DC3815442301466A00590EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R6NEH26ZQ;
+				INFOPLIST_FILE = TakuzuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.isaksson.erland.TakuzuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Takuzu.app/Takuzu";
+			};
+			name = Debug;
+		};
+		DC3815452301466A00590EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6R6NEH26ZQ;
+				INFOPLIST_FILE = TakuzuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = info.isaksson.erland.TakuzuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Takuzu.app/Takuzu";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,6 +622,15 @@
 			buildConfigurations = (
 				DC3814C122FEA28500590EAA /* Debug */,
 				DC3814C222FEA28500590EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3815432301466A00590EAA /* Build configuration list for PBXNativeTarget "TakuzuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3815442301466A00590EAA /* Debug */,
+				DC3815452301466A00590EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

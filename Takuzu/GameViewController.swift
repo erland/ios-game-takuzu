@@ -46,7 +46,7 @@ class GameViewController: UIViewController, GameDelegate {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
-                scene.setup(delegate: self, difficulty: difficulty, boardSize: 6)
+                scene.setup(delegate: self, difficulty: difficulty)
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
                 view.presentScene(scene)
@@ -58,7 +58,7 @@ class GameViewController: UIViewController, GameDelegate {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
-                scene.setup(delegate: self, difficulty: nil, boardSize: 6, completed: true)
+                scene.setup(delegate: self, difficulty: nil, completed: true)
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
                 view.presentScene(scene)
@@ -70,7 +70,7 @@ class GameViewController: UIViewController, GameDelegate {
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
-                scene.setup(delegate: self, difficulty: nil, boardSize: 6, inProgress: true)
+                scene.setup(delegate: self, difficulty: nil, inProgress: true)
                 // Set the scale mode to scale to fit the window
                 scene.scaleMode = .aspectFit
                 view.presentScene(scene)
@@ -86,15 +86,18 @@ class GameViewController: UIViewController, GameDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //generateBoards(noOfBoards: 12, difficulty: .Easy)
-        //TakuzuRepository().validateBoards()
+        //generateBoards(noOfBoards: 3, difficulty: .Easy, size: 6)
+        //generateBoards(noOfBoards: 4, difficulty: .Medium, size: 8)
+        //generateBoards(noOfBoards: 3, difficulty: .Hard, size: 10)
+        //generateBoards(noOfBoards: 5, difficulty: .VeryHard, size: 10)
+        TakuzuRepository().validateBoards()
         selectDifficulty()
     }
     
-    private func generateBoards(noOfBoards: Int, difficulty: Difficulty) {
+    private func generateBoards(noOfBoards: Int, difficulty: Difficulty, size: Int) {
         var boards : [String] = []
         while boards.count<noOfBoards {
-            if let board = TakuzuRepository().getGeneratedBoard(difficulty: difficulty, size: 6) {
+            if let board = TakuzuRepository().getGeneratedBoard(difficulty: difficulty, size: size) {
                 if !boards.contains(board) {
                     boards.append(board)
                 }

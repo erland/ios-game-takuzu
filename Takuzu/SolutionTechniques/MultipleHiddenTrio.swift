@@ -1,25 +1,25 @@
 //
-//  HiddenTrio.swift
+//  MultipleHiddenTrio.swift
 //  Takuzu
 //
-//  Created by Erland Isaksson on 2019-08-10.
+//  Created by Erland Isaksson on 2019-08-13.
 //  Copyright © 2019 Erland Isaksson. All rights reserved.
 //
 
 import Foundation
 
-class HiddenTrio : SolverTechnique {
+class MultipleHiddenTrio : SolverTechnique {
     func solvePosition(board: BoardHandler, x: Int, y: Int) -> Bool {
         
         if checkRows(board: board, x: x, y: y) {
-           return true
+            return true
         }
         if checkColumns(board: board, x: x, y: y) {
             return true
         }
         return false
     }
-
+    
     private func dangerNumberFromSums(sums: [Int]) -> Int {
         var dangerNumber = 1
         if sums[1]<sums[0] {
@@ -34,9 +34,9 @@ class HiddenTrio : SolverTechnique {
                 sums[cellValue-1] = sums[cellValue-1] + 1
             }
         }
-        if sums[0] == board.sizeOfBoard()/2-1 || sums[1] == board.sizeOfBoard()/2-1 {
+        if sums[0] + sums[1] == board.sizeOfBoard()-5 {
             let dangerNumber = dangerNumberFromSums(sums: sums)
-
+            
             var dangerCandidatePositions : [Int] = []
             var dangerPositions : [[Int]] = []
             var candidateIsDanger = false
@@ -58,22 +58,15 @@ class HiddenTrio : SolverTechnique {
                             dangerCandidatePositions.removeLast()
                         }
                         dangerPositions.append(dangerCandidatePositions)
-                    }else if dangerCandidatePositions.count>=3 && sums[dangerNumber-1]<=board.sizeOfBoard()/2-3 {
-                        dangerPositions.append(dangerCandidatePositions)
                     }
                     dangerCandidatePositions.removeAll()
                     candidateIsDanger = false
                 }
             }
             if dangerCandidatePositions.count>=2 && candidateIsDanger {
-                if dangerCandidatePositions.count>2 {
-                    dangerCandidatePositions.removeLast()
-                }
-                dangerPositions.append(dangerCandidatePositions)
-            }else if dangerCandidatePositions.count>=3 && sums[dangerNumber-1]<=board.sizeOfBoard()/2-3{
                 dangerPositions.append(dangerCandidatePositions)
             }
-            if isDanger(dangerPositions: dangerPositions, currentPos: x) {
+            if isAllDanger(dangerPositions: dangerPositions, currentPos: x) {
                 if board.isValid(x: x, y: y, value: dangerNumber) {
                     board.setValue(x: x, y: y, value: dangerNumber, present: true)
                     return true
@@ -82,25 +75,16 @@ class HiddenTrio : SolverTechnique {
         }
         return false
     }
-
-    private func isDanger(dangerPositions: [[Int]], currentPos: Int) -> Bool {
-        var match = false
+    
+    private func isAllDanger(dangerPositions: [[Int]], currentPos: Int) -> Bool {
+        if dangerPositions.count<2 {
+            return false
+        }
+        var match = true
         for positions in dangerPositions {
-            if positions.count >= 2 {
-                if !positions.contains(currentPos) {
-                    match = true
-                    break
-                }else {
-                    if let dangerIndex = positions.firstIndex(where: { $0 == currentPos }) {
-                        if dangerIndex>1 {
-                            match = true
-                            break
-                        }else if dangerIndex<positions.count-2 {
-                            match = true
-                            break
-                        }
-                    }
-                }
+            if positions.contains(currentPos) {
+                match = false
+                break
             }
         }
         return match
@@ -113,7 +97,7 @@ class HiddenTrio : SolverTechnique {
                 sums[cellValue-1] = sums[cellValue-1] + 1
             }
         }
-        if sums[0] == board.sizeOfBoard()/2-1 || sums[1] == board.sizeOfBoard()/2-1 {
+        if sums[0] + sums[1] == board.sizeOfBoard()-5 {
             let dangerNumber = dangerNumberFromSums(sums: sums)
             
             var dangerCandidatePositions : [Int] = []
@@ -137,22 +121,15 @@ class HiddenTrio : SolverTechnique {
                             dangerCandidatePositions.removeLast()
                         }
                         dangerPositions.append(dangerCandidatePositions)
-                    }else if dangerCandidatePositions.count>=3 && sums[dangerNumber-1]<=board.sizeOfBoard()/2-3 {
-                        dangerPositions.append(dangerCandidatePositions)
                     }
                     dangerCandidatePositions.removeAll()
                     candidateIsDanger = false
                 }
             }
             if dangerCandidatePositions.count>=2 && candidateIsDanger {
-                if dangerCandidatePositions.count>2 {
-                    dangerCandidatePositions.removeLast()
-                }
-                dangerPositions.append(dangerCandidatePositions)
-            }else if dangerCandidatePositions.count>=3 && sums[dangerNumber-1]<=board.sizeOfBoard()/2-3{
                 dangerPositions.append(dangerCandidatePositions)
             }
-            if isDanger(dangerPositions: dangerPositions, currentPos: y) {
+            if isAllDanger(dangerPositions: dangerPositions, currentPos: y) {
                 if board.isValid(x: x, y: y, value: dangerNumber) {
                     board.setValue(x: x, y: y, value: dangerNumber, present: true)
                     return true

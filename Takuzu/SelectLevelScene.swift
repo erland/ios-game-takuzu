@@ -22,14 +22,12 @@ class SelectLevelScene: SKScene {
     var inProgress : Bool = false
     var difficulty : Difficulty?
     var offset : Int = 0
-    var boardSize : Int = 6
     
     override func sceneDidLoad() {
         localize()
     }
     
-    func setup(delegate: GameDelegate, difficulty: Difficulty?, boardSize: Int, completed: Bool = false, inProgress: Bool = false) {
-        self.boardSize = boardSize
+    func setup(delegate: GameDelegate, difficulty: Difficulty?, completed: Bool = false, inProgress: Bool = false) {
         self.gameDelegate = delegate
         self.completed = completed
         self.inProgress = inProgress
@@ -208,7 +206,7 @@ class SelectLevelScene: SKScene {
                     }
                 }else {
                     for i in 1...12 {
-                        let boardNumbers = repository.getGeneratedBoard(size: self.boardSize)
+                        let boardNumbers = repository.getGeneratedBoard(size: 10)
                         if boardNumbers != nil {
                             let record = storage.getRecord(boardNumbers: boardNumbers!)
                             if record != nil {
@@ -261,6 +259,17 @@ class SelectLevelScene: SKScene {
     }
     
     func numbersInBoard(_ boardNumbers: String) -> Int {
+        var boardSize = 6
+        switch boardNumbers.count {
+        case 36:
+            boardSize = 6
+        case 64:
+            boardSize = 8
+        case 100:
+            boardSize = 10
+        default:
+            boardSize = 6
+        }
         return boardSize*boardSize - boardNumbers.characters.filter { $0 == "_" }.count
     }
     

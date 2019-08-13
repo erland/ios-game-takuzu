@@ -51,11 +51,11 @@ class SelectDifficultyScene: SKScene {
             gameDelegate?.selectedDifficulty(difficulty: Difficulty.Hard)
         }else if veryHardButton!.contains(touchLocation) {
             gameDelegate?.selectedDifficulty(difficulty: Difficulty.VeryHard)
-        }else if randomButton!.contains(touchLocation) {
+        }else if randomButton != nil && randomButton!.contains(touchLocation) {
             gameDelegate?.selectedDifficulty(difficulty: nil)
-        }else if completedButton!.contains(touchLocation) {
+        }else if completedButton != nil && completedButton!.contains(touchLocation) {
             gameDelegate?.selectedCompletedBoards()
-        }else if inProgressButton!.contains(touchLocation) {
+        }else if inProgressButton != nil && inProgressButton!.contains(touchLocation) {
             gameDelegate?.selectedInProgressBoards()
         }
     }
