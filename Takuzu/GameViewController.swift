@@ -90,7 +90,7 @@ class GameViewController: UIViewController, GameDelegate {
         //generateBoards(noOfBoards: 4, difficulty: .Medium, size: 8)
         //generateBoards(noOfBoards: 3, difficulty: .Hard, size: 10)
         //generateBoards(noOfBoards: 5, difficulty: .VeryHard, size: 10)
-        TakuzuRepository().validateBoards()
+        //TakuzuRepository().validateBoards()
         selectDifficulty()
     }
     
