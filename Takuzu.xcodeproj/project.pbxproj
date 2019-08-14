@@ -51,6 +51,44 @@
 		DC38155123029AC600590EAA /* MultipleHiddenTrioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38155023029AC600590EAA /* MultipleHiddenTrioTests.swift */; };
 		DC3815532302A91400590EAA /* SolverVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815522302A91400590EAA /* SolverVerifier.swift */; };
 		DC3815552302E48300590EAA /* AbstractSolverBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */; };
+		DC3815792303D23C00590EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815782303D23C00590EAA /* AppDelegate.swift */; };
+		DC3815812303D23C00590EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815802303D23C00590EAA /* ViewController.swift */; };
+		DC3815832303D23D00590EAA /* _osx.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3815822303D23D00590EAA /* _osx.xcassets */; };
+		DC3815862303D23D00590EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3815842303D23D00590EAA /* Main.storyboard */; };
+		DC38158C2303D37700590EAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC3815042300296B00590EAA /* Localizable.strings */; };
+		DC38158D2303D37B00590EAA /* SKScene+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D722FEA39600590EAA /* SKScene+Localization.swift */; };
+		DC38158E2303D38800590EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3814B822FEA28500590EAA /* Assets.xcassets */; };
+		DC38158F2303D38F00590EAA /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814EB22FEA70100590EAA /* Difficulty.swift */; };
+		DC3815902303D39A00590EAA /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C322FEA33500590EAA /* Array2D.swift */; };
+		DC3815912303D39A00590EAA /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C622FEA34800590EAA /* Board.swift */; };
+		DC3815922303D39A00590EAA /* BoardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C822FEA34800590EAA /* BoardGenerator.swift */; };
+		DC3815932303D39A00590EAA /* BoardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C922FEA34800590EAA /* BoardStorage.swift */; };
+		DC3815942303D39A00590EAA /* TakuzuRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F622FEC28B00590EAA /* TakuzuRepository.swift */; };
+		DC3815952303D39A00590EAA /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C522FEA34800590EAA /* BoardView.swift */; };
+		DC3815962303D39A00590EAA /* AbstractSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814ED22FEBA4500590EAA /* AbstractSolverBoard.swift */; };
+		DC3815972303D39A00590EAA /* BruteForceSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814C722FEA34800590EAA /* BruteForceSolverBoard.swift */; };
+		DC3815982303D39A00590EAA /* TechniqueSolverBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F422FEC1E200590EAA /* TechniqueSolverBoard.swift */; };
+		DC3815992303D39A00590EAA /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814CF22FEA35400590EAA /* GameDelegate.swift */; };
+		DC38159A2303D39A00590EAA /* Number.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814DB22FEA39600590EAA /* Number.swift */; };
+		DC38159B2303D39A00590EAA /* NumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814DC22FEA39600590EAA /* NumberView.swift */; };
+		DC38159C2303D39A00590EAA /* SelectDifficultyScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D422FEA39600590EAA /* SelectDifficultyScene.sks */; };
+		DC38159D2303D39A00590EAA /* SelectDifficultyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D522FEA39600590EAA /* SelectDifficultyScene.swift */; };
+		DC38159E2303D39A00590EAA /* SelectLevelScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D822FEA39600590EAA /* SelectLevelScene.sks */; };
+		DC38159F2303D39A00590EAA /* SelectLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D222FEA39500590EAA /* SelectLevelScene.swift */; };
+		DC3815A02303D39A00590EAA /* SingleGameOverScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814DA22FEA39600590EAA /* SingleGameOverScene.sks */; };
+		DC3815A12303D39A00590EAA /* SingleGameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D122FEA39500590EAA /* SingleGameOverScene.swift */; };
+		DC3815A22303D39A00590EAA /* SingleGameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DC3814D322FEA39500590EAA /* SingleGameScene.sks */; };
+		DC3815A32303D39A00590EAA /* SingleGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814D622FEA39600590EAA /* SingleGameScene.swift */; };
+		DC3815A42303D3A200590EAA /* BoardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F022FEBB4C00590EAA /* BoardHandler.swift */; };
+		DC3815A52303D3A200590EAA /* SolverTechnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F222FEC1C600590EAA /* SolverTechnique.swift */; };
+		DC3815A62303D3A200590EAA /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814F822FEC53300590EAA /* Pair.swift */; };
+		DC3815A72303D3A200590EAA /* CompleteRowColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FA22FEC56500590EAA /* CompleteRowColumn.swift */; };
+		DC3815A82303D3A200590EAA /* AvoidTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FC22FEC59400590EAA /* AvoidTrio.swift */; };
+		DC3815A92303D3A200590EAA /* HiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814FE22FEC5B000590EAA /* HiddenTrio.swift */; };
+		DC3815AA2303D3A200590EAA /* UniqueRowColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38150022FEC5CD00590EAA /* UniqueRowColumn.swift */; };
+		DC3815AB2303D3A200590EAA /* MultipleHiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154E23029A8C00590EAA /* MultipleHiddenTrio.swift */; };
+		DC3815AD2303D70600590EAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815AC2303D70600590EAA /* Color.swift */; };
+		DC3815AE2303D7D600590EAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815AC2303D70600590EAA /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +151,14 @@
 		DC38155023029AC600590EAA /* MultipleHiddenTrioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleHiddenTrioTests.swift; sourceTree = "<group>"; };
 		DC3815522302A91400590EAA /* SolverVerifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverVerifier.swift; sourceTree = "<group>"; };
 		DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSolverBoardTests.swift; sourceTree = "<group>"; };
+		DC3815762303D23C00590EAA /* TakuzuOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakuzuOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3815782303D23C00590EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC3815802303D23C00590EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC3815822303D23D00590EAA /* _osx.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = _osx.xcassets; sourceTree = "<group>"; };
+		DC3815852303D23D00590EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC3815872303D23D00590EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3815882303D23D00590EAA /* TakuzuOSX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakuzuOSX.entitlements; sourceTree = "<group>"; };
+		DC3815AC2303D70600590EAA /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +176,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3815732303D23C00590EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -138,6 +191,7 @@
 			children = (
 				DC3814AA22FEA28400590EAA /* Takuzu */,
 				DC38153D2301466A00590EAA /* TakuzuTests */,
+				DC3815772303D23C00590EAA /* TakuzuOSX */,
 				DC3814A922FEA28400590EAA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +201,7 @@
 			children = (
 				DC3814A822FEA28400590EAA /* Takuzu.app */,
 				DC38153C2301466A00590EAA /* TakuzuTests.xctest */,
+				DC3815762303D23C00590EAA /* TakuzuOSX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +239,7 @@
 				DC3814BD22FEA28500590EAA /* Info.plist */,
 				DC3814D722FEA39600590EAA /* SKScene+Localization.swift */,
 				DC3815042300296B00590EAA /* Localizable.strings */,
+				DC3815AC2303D70600590EAA /* Color.swift */,
 			);
 			path = Takuzu;
 			sourceTree = "<group>";
@@ -217,6 +273,19 @@
 				DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */,
 			);
 			path = TakuzuTests;
+			sourceTree = "<group>";
+		};
+		DC3815772303D23C00590EAA /* TakuzuOSX */ = {
+			isa = PBXGroup;
+			children = (
+				DC3815782303D23C00590EAA /* AppDelegate.swift */,
+				DC3815802303D23C00590EAA /* ViewController.swift */,
+				DC3815822303D23D00590EAA /* _osx.xcassets */,
+				DC3815842303D23D00590EAA /* Main.storyboard */,
+				DC3815872303D23D00590EAA /* Info.plist */,
+				DC3815882303D23D00590EAA /* TakuzuOSX.entitlements */,
+			);
+			path = TakuzuOSX;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +326,23 @@
 			productReference = DC38153C2301466A00590EAA /* TakuzuTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DC3815752303D23C00590EAA /* TakuzuOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3815892303D23D00590EAA /* Build configuration list for PBXNativeTarget "TakuzuOSX" */;
+			buildPhases = (
+				DC3815722303D23C00590EAA /* Sources */,
+				DC3815732303D23C00590EAA /* Frameworks */,
+				DC3815742303D23C00590EAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TakuzuOSX;
+			productName = TakuzuOSX;
+			productReference = DC3815762303D23C00590EAA /* TakuzuOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -273,6 +359,9 @@
 					DC38153B2301466A00590EAA = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = DC3814A722FEA28400590EAA;
+					};
+					DC3815752303D23C00590EAA = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -292,6 +381,7 @@
 			targets = (
 				DC3814A722FEA28400590EAA /* Takuzu */,
 				DC38153B2301466A00590EAA /* TakuzuTests */,
+				DC3815752303D23C00590EAA /* TakuzuOSX */,
 			);
 		};
 /* End PBXProject section */
@@ -319,6 +409,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3815742303D23C00590EAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3815A02303D39A00590EAA /* SingleGameOverScene.sks in Resources */,
+				DC3815832303D23D00590EAA /* _osx.xcassets in Resources */,
+				DC38158C2303D37700590EAA /* Localizable.strings in Resources */,
+				DC38158E2303D38800590EAA /* Assets.xcassets in Resources */,
+				DC3815A22303D39A00590EAA /* SingleGameScene.sks in Resources */,
+				DC38159E2303D39A00590EAA /* SelectLevelScene.sks in Resources */,
+				DC3815862303D23D00590EAA /* Main.storyboard in Resources */,
+				DC38159C2303D39A00590EAA /* SelectDifficultyScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,6 +448,7 @@
 				DC3814F322FEC1C600590EAA /* SolverTechnique.swift in Sources */,
 				DC3814CC22FEA34800590EAA /* BruteForceSolverBoard.swift in Sources */,
 				DC3814E222FEA39600590EAA /* SingleGameScene.swift in Sources */,
+				DC3815AD2303D70600590EAA /* Color.swift in Sources */,
 				DC3814CB22FEA34800590EAA /* Board.swift in Sources */,
 				DC3814F922FEC53300590EAA /* Pair.swift in Sources */,
 				DC3814EE22FEBA4500590EAA /* AbstractSolverBoard.swift in Sources */,
@@ -369,6 +475,42 @@
 				DC38154923018FF500590EAA /* AvoidTrioTests.swift in Sources */,
 				DC38155123029AC600590EAA /* MultipleHiddenTrioTests.swift in Sources */,
 				DC3815532302A91400590EAA /* SolverVerifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3815722303D23C00590EAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3815812303D23C00590EAA /* ViewController.swift in Sources */,
+				DC3815A12303D39A00590EAA /* SingleGameOverScene.swift in Sources */,
+				DC38158D2303D37B00590EAA /* SKScene+Localization.swift in Sources */,
+				DC3815972303D39A00590EAA /* BruteForceSolverBoard.swift in Sources */,
+				DC3815AA2303D3A200590EAA /* UniqueRowColumn.swift in Sources */,
+				DC3815932303D39A00590EAA /* BoardStorage.swift in Sources */,
+				DC3815912303D39A00590EAA /* Board.swift in Sources */,
+				DC3815A32303D39A00590EAA /* SingleGameScene.swift in Sources */,
+				DC38159A2303D39A00590EAA /* Number.swift in Sources */,
+				DC3815AB2303D3A200590EAA /* MultipleHiddenTrio.swift in Sources */,
+				DC3815982303D39A00590EAA /* TechniqueSolverBoard.swift in Sources */,
+				DC3815A82303D3A200590EAA /* AvoidTrio.swift in Sources */,
+				DC3815A72303D3A200590EAA /* CompleteRowColumn.swift in Sources */,
+				DC38158F2303D38F00590EAA /* Difficulty.swift in Sources */,
+				DC3815A42303D3A200590EAA /* BoardHandler.swift in Sources */,
+				DC3815A52303D3A200590EAA /* SolverTechnique.swift in Sources */,
+				DC38159D2303D39A00590EAA /* SelectDifficultyScene.swift in Sources */,
+				DC3815AE2303D7D600590EAA /* Color.swift in Sources */,
+				DC3815922303D39A00590EAA /* BoardGenerator.swift in Sources */,
+				DC3815A62303D3A200590EAA /* Pair.swift in Sources */,
+				DC3815962303D39A00590EAA /* AbstractSolverBoard.swift in Sources */,
+				DC3815792303D23C00590EAA /* AppDelegate.swift in Sources */,
+				DC3815952303D39A00590EAA /* BoardView.swift in Sources */,
+				DC3815942303D39A00590EAA /* TakuzuRepository.swift in Sources */,
+				DC3815A92303D3A200590EAA /* HiddenTrio.swift in Sources */,
+				DC3815992303D39A00590EAA /* GameDelegate.swift in Sources */,
+				DC3815902303D39A00590EAA /* Array2D.swift in Sources */,
+				DC38159B2303D39A00590EAA /* NumberView.swift in Sources */,
+				DC38159F2303D39A00590EAA /* SelectLevelScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +548,14 @@
 				DC38150523002D5500590EAA /* sv */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DC3815842303D23D00590EAA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3815852303D23D00590EAA /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -605,6 +755,50 @@
 			};
 			name = Release;
 		};
+		DC38158A2303D23D00590EAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TakuzuOSX/TakuzuOSX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6R6NEH26ZQ;
+				INFOPLIST_FILE = TakuzuOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.isaksson.erland.Takuzu-osx-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		DC38158B2303D23D00590EAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TakuzuOSX/TakuzuOSX.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6R6NEH26ZQ;
+				INFOPLIST_FILE = TakuzuOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "info.isaksson.erland.Takuzu-osx-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,6 +825,15 @@
 			buildConfigurations = (
 				DC3815442301466A00590EAA /* Debug */,
 				DC3815452301466A00590EAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3815892303D23D00590EAA /* Build configuration list for PBXNativeTarget "TakuzuOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC38158A2303D23D00590EAA /* Debug */,
+				DC38158B2303D23D00590EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

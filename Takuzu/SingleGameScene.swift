@@ -95,11 +95,20 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
         }
         timeText?.text = "\(timeAsString(timeCounter))"
     }
+    #if os(iOS)
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
         }
-        let touchLocation = touch.location(in: self)
+        touchesBegan(at: touch.location(in: self))
+    }
+    #elseif os(OSX)
+    override func mouseDown(with event: NSEvent) {
+        touchesBegan(at: event.location(in: self))
+    }
+    #endif
+    
+    func touchesBegan(at touchLocation: CGPoint) {
         placeNumber(position: touchLocation)
     }
     
@@ -153,7 +162,7 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
         solver.attachObserver(self)
         hints = hints + 1
         hintName?.isHidden = false
-        hintName?.fontColor = UIColor.green
+        hintName?.fontColor = SKColor.green
         if solver.solve(technique: Pair()) {
             print("Showed solution with Single Candidate")
             hintName?.text = NSLocalizedString("hintPair", comment: "hintPair")
@@ -174,7 +183,7 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
             hintName?.text = NSLocalizedString("hintUniqueRowColumn", comment: "hintUniqueRowColumn")
         }else {
             hints = hints - 1
-            hintName?.fontColor = UIColor.orange
+            hintName?.fontColor = Color.orange
             hintName?.text = NSLocalizedString("noHintAvailable", comment: "noHintAvailable")
         }
     }

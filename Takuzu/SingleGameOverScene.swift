@@ -50,7 +50,20 @@ class SingleGameOverScene: SKScene {
     override func didMove(to view: SKView) {
         openedTime = NSDate().timeIntervalSince1970
     }
+    #if os(iOS)
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        touchesBegan(at: touch.location(in: self))
+    }
+    #elseif os(OSX)
+    override func mouseDown(with event: NSEvent) {
+        touchesBegan(at: event.location(in: self))
+    }
+    #endif
+    
+    func touchesBegan(at touchLocation: CGPoint) {
         // We need to ensure the sceen is shown for 2 seconds before we allow player to continue
         if openedTime!<NSDate().timeIntervalSince1970-2 {
             gameDelegate?.finishedGame()

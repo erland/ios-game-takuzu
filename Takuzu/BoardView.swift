@@ -46,14 +46,14 @@ class BoardView : SKSpriteNode, BoardObserver {
         let boardHeight = CGFloat(y)*cellSize
         let border = SKShapeNode.init(rectOf: CGSize(width: boardWidth,
                                                      height: boardHeight))
-        border.strokeColor = UIColor.brown
+        border.strokeColor = Color.brown
         border.lineWidth = 3
         
         for row in 1..<(y) {
             let line = BoardView.createLine(anchor: CGPoint(x: -boardWidth/2, y: -boardHeight/2),
                                             from: CGPoint(x: 0.0, y: CGFloat(row)*cellSize),
                                             to: CGPoint(x: boardWidth, y: CGFloat(row)*cellSize))
-            line.strokeColor = UIColor.brown
+            line.strokeColor = Color.brown
             line.lineWidth = 1
             border.addChild(line)
         }
@@ -61,7 +61,7 @@ class BoardView : SKSpriteNode, BoardObserver {
             let line = BoardView.createLine(anchor: CGPoint(x: -boardWidth/2, y: -boardHeight/2),
                                             from: CGPoint(x: CGFloat(column)*cellSize, y: 0),
                                             to: CGPoint(x: CGFloat(column)*cellSize, y: boardHeight))
-            line.strokeColor = UIColor.brown
+            line.strokeColor = Color.brown
             line.lineWidth = 1
             border.addChild(line)
         }

@@ -37,12 +37,20 @@ class SelectDifficultyScene: SKScene {
     override func didMove(to view: SKView) {
         
     }
+    #if os(iOS)
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
         }
-        let touchLocation = touch.location(in: self)
-        
+        touchesBegan(at: touch.location(in: self))
+    }
+    #elseif os(OSX)
+    override func mouseDown(with event: NSEvent) {
+        touchesBegan(at: event.location(in: self))
+    }
+    #endif
+    
+    func touchesBegan(at touchLocation: CGPoint) {
         if easyButton!.contains(touchLocation) {
             gameDelegate?.selectedDifficulty(difficulty: Difficulty.Easy)
         }else if mediumButton!.contains(touchLocation) {

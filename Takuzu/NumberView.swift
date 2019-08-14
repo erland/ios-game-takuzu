@@ -15,7 +15,7 @@ class NumberView : SKSpriteNode, NumberObserver {
     init(number: Number, cellSize: CGFloat) {
         self.cellSize = cellSize
         self.number = number
-        super.init(texture: nil, color: UIColor.clear, size: CGSize(width: cellSize, height: cellSize))
+        super.init(texture: nil, color: Color.clear, size: CGSize(width: cellSize, height: cellSize))
         setScale(cellSize/66.67)
         number.attachObserver(observer: self)
         anchorPoint = CGPoint(x: 0, y: 1)
@@ -44,7 +44,7 @@ class NumberView : SKSpriteNode, NumberObserver {
             label.horizontalAlignmentMode = .center
             label.verticalAlignmentMode = .center
             label.position = CGPoint(x: 0, y: 0)
-            label.fontColor = UIColor.black
+            label.fontColor = Color.black
             addChild(label)
         }
     }
