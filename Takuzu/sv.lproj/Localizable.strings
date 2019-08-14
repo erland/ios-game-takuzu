@@ -15,7 +15,7 @@
 "previouslyStarted" = "Tidigare påbörjade";
 "selectLevel" = "Välj bana";
 "back" = "Tillbaka";
-"next" = "NÄsta";
+"next" = "Nästa";
 "loading" = "Laddar...";
 "restart" = "Starta om";
 "quit" = "Avsluta";
@@ -29,9 +29,9 @@
 "rule2" = "Max två rutor i rad med samma nummer";
 "rule3" = "Samma antal rutor med samma nummer i varje rad/kolumn";
 "rule4" = "Kombinationen i varje rad/kolumn måste vara unik";
-"hintPair" = "Det finns redan ett par";
-"hintCompleteRowColumn" = "Kvoten för ett nummer är redan fyllt i raden/kolumnen";
-"hintAvoidTrio" = "Undvik tre rutor i rad med samma nummer";
-"hintHiddenTrio" = "Förbered för att undvika tre rutor i rad med samma nummer";
-"hintUniqueRowColumn" = "Varje rad/kolumn måste vara unik";
+"hintPair" = "Redan två i rad";
+"hintCompleteRowColumn" = "Kvoten är redan uppfylld";
+"hintAvoidTrio" = "Undvik tre i rad";
+"hintHiddenTrio" = "Förbered för att undvika tre i rad";
+"hintUniqueRowColumn" = "Måste vara unik";
 "invalidBoard" = "Uppfyller inte alla regler";

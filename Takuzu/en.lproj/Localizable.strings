@@ -29,9 +29,9 @@
 "rule2" = "Maximum two adjacent cells with same number";
 "rule3" = "Equal number of cells with same number in each row/column";
 "rule4" = "Combination in each row/column must be unique";
-"hintPair" = "There is already a pair";
-"hintCompleteRowColumn" = "Quota for a number is filled in row/column";
-"hintAvoidTrio" = "Avoid three adjacent cells with same number";
-"hintHiddenTrio" = "Prepare to avoid three adjacent cells with same number";
-"hintUniqueRowColumn" = "Each row/column needs to be unique";
+"hintPair" = "There is already two in a row";
+"hintCompleteRowColumn" = "Quota is already filled";
+"hintAvoidTrio" = "Avoid three in a row";
+"hintHiddenTrio" = "Prepare to avoid three in a row";
+"hintUniqueRowColumn" = "Must be unique";
 "invalidBoard" = "Does not fulfill all the rules";
