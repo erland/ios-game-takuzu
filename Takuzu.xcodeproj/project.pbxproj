@@ -52,7 +52,6 @@
 		DC3815532302A91400590EAA /* SolverVerifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815522302A91400590EAA /* SolverVerifier.swift */; };
 		DC3815552302E48300590EAA /* AbstractSolverBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */; };
 		DC3815792303D23C00590EAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815782303D23C00590EAA /* AppDelegate.swift */; };
-		DC3815812303D23C00590EAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815802303D23C00590EAA /* ViewController.swift */; };
 		DC3815832303D23D00590EAA /* _osx.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3815822303D23D00590EAA /* _osx.xcassets */; };
 		DC3815862303D23D00590EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3815842303D23D00590EAA /* Main.storyboard */; };
 		DC38158C2303D37700590EAA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC3815042300296B00590EAA /* Localizable.strings */; };
@@ -89,6 +88,7 @@
 		DC3815AB2303D3A200590EAA /* MultipleHiddenTrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC38154E23029A8C00590EAA /* MultipleHiddenTrio.swift */; };
 		DC3815AD2303D70600590EAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815AC2303D70600590EAA /* Color.swift */; };
 		DC3815AE2303D7D600590EAA /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3815AC2303D70600590EAA /* Color.swift */; };
+		DC3815AF2303DF8D00590EAA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3814B322FEA28400590EAA /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +153,6 @@
 		DC3815542302E48300590EAA /* AbstractSolverBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractSolverBoardTests.swift; sourceTree = "<group>"; };
 		DC3815762303D23C00590EAA /* TakuzuOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakuzuOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3815782303D23C00590EAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC3815802303D23C00590EAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC3815822303D23D00590EAA /* _osx.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = _osx.xcassets; sourceTree = "<group>"; };
 		DC3815852303D23D00590EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC3815872303D23D00590EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -279,7 +278,6 @@
 			isa = PBXGroup;
 			children = (
 				DC3815782303D23C00590EAA /* AppDelegate.swift */,
-				DC3815802303D23C00590EAA /* ViewController.swift */,
 				DC3815822303D23D00590EAA /* _osx.xcassets */,
 				DC3815842303D23D00590EAA /* Main.storyboard */,
 				DC3815872303D23D00590EAA /* Info.plist */,
@@ -482,7 +480,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3815812303D23C00590EAA /* ViewController.swift in Sources */,
 				DC3815A12303D39A00590EAA /* SingleGameOverScene.swift in Sources */,
 				DC38158D2303D37B00590EAA /* SKScene+Localization.swift in Sources */,
 				DC3815972303D39A00590EAA /* BruteForceSolverBoard.swift in Sources */,
@@ -491,6 +488,7 @@
 				DC3815912303D39A00590EAA /* Board.swift in Sources */,
 				DC3815A32303D39A00590EAA /* SingleGameScene.swift in Sources */,
 				DC38159A2303D39A00590EAA /* Number.swift in Sources */,
+				DC3815AF2303DF8D00590EAA /* GameViewController.swift in Sources */,
 				DC3815AB2303D3A200590EAA /* MultipleHiddenTrio.swift in Sources */,
 				DC3815982303D39A00590EAA /* TechniqueSolverBoard.swift in Sources */,
 				DC3815A82303D3A200590EAA /* AvoidTrio.swift in Sources */,

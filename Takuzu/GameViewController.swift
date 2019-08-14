@@ -6,11 +6,17 @@
 //  Copyright © 2019 Erland Isaksson. All rights reserved.
 //
 
-import UIKit
 import SpriteKit
 import GameplayKit
 
-class GameViewController: UIViewController, GameDelegate {
+#if os(iOS)
+import UIKit
+public typealias ViewController = UIViewController
+#elseif os(OSX)
+import Cocoa
+public typealias ViewController = NSViewController
+#endif
+class GameViewController: ViewController, GameDelegate {
     var board: Board?
     
     func finishedGame() {
@@ -28,7 +34,7 @@ class GameViewController: UIViewController, GameDelegate {
         if !completed {
             finishedGame()
         }else {
-            if let view = self.view as! SKView? {
+            if let view = self.view as? SKView {
                 // Load the SKScene from 'GameScene.sks'
                 if let scene = SKScene(fileNamed: "SingleGameOverScene") as? SingleGameOverScene {
                     // Set the scale mode to scale to fit the window
@@ -43,7 +49,7 @@ class GameViewController: UIViewController, GameDelegate {
     }
     
     func selectedDifficulty(difficulty: Difficulty?) {
-        if let view = self.view as! SKView? {
+        if let view = self.view as? SKView {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
                 scene.setup(delegate: self, difficulty: difficulty)
@@ -55,7 +61,7 @@ class GameViewController: UIViewController, GameDelegate {
     }
     
     func selectedCompletedBoards() {
-        if let view = self.view as! SKView? {
+        if let view = self.view as? SKView {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
                 scene.setup(delegate: self, difficulty: nil, completed: true)
@@ -67,7 +73,7 @@ class GameViewController: UIViewController, GameDelegate {
     }
     
     func selectedInProgressBoards() {
-        if let view = self.view as! SKView? {
+        if let view = self.view as? SKView {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SelectLevelScene") as? SelectLevelScene {
                 scene.setup(delegate: self, difficulty: nil, inProgress: true)
@@ -109,7 +115,7 @@ class GameViewController: UIViewController, GameDelegate {
         }
     }
     func selectDifficulty() {
-        if let view = self.view as! SKView? {
+        if let view = self.view as? SKView {
             view.ignoresSiblingOrder = true
             
             if let scene = SKScene(fileNamed: "SelectDifficultyScene") as? SelectDifficultyScene {
@@ -122,7 +128,7 @@ class GameViewController: UIViewController, GameDelegate {
         
     }
     func startSingleGame(board: Board, startTime: Int) {
-        if let view = self.view as! SKView? {
+        if let view = self.view as? SKView {
             // Load the SKScene from 'GameScene.sks'
             if let scene = SKScene(fileNamed: "SingleGameScene") as? SingleGameScene {
                 // Set the scale mode to scale to fit the window
@@ -135,6 +141,7 @@ class GameViewController: UIViewController, GameDelegate {
         }
     }
     
+    #if os(iOS)
     override var shouldAutorotate: Bool {
         return true
     }
@@ -150,4 +157,5 @@ class GameViewController: UIViewController, GameDelegate {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    #endif
 }
