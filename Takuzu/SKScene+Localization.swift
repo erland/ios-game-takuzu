@@ -25,7 +25,7 @@ extension SKScene {
                                 let key = String(text[Range(result!.range(at: i), in: text)!])
                                 let replaceString = "@\"\(key)\""
                                 let replacementString = NSLocalizedString(key, comment: key)
-                                print("Replacing: \(replaceString) With: \(replacementString)")
+                                //print("Replacing: \(replaceString) With: \(replacementString)")
                                 node.text = text.replacingOccurrences(of: replaceString, with: replacementString)
                             }
                         }
