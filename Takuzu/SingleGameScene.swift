@@ -193,8 +193,11 @@ class SingleGameScene: SKScene, BoardObserver, SolverObserver {
             var valid = true
             for y in 0..<boardView!.board!.height {
                 for x in 0..<boardView!.board!.width {
-                    if !boardView!.board!.isValidBoard(number: boardView!.board!.atPosition(x, y)!) {
-                        valid = false
+                    if let number = boardView!.board!.atPosition(x, y) {
+                        number.error = !boardView!.board!.isValidBoard(number: number)
+                        if number.error {
+                            valid = false
+                        }
                     }
                 }
             }
